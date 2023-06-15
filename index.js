@@ -33,32 +33,6 @@ const getProduct = async (ID) => {
   }
 };
 const arr = [];
-// getCategories()
-//   .then((response) => response.json())
-//   .then((data) => {
-//     for (const category of data) {
-//       const oneCategory = {};
-//       oneCategory.category = category;
-//       getProduct(category.id)
-//         .then((response) => response.json())
-//         .then((data) => {
-//           oneCategory.products = data;
-//           arr.push(oneCategory);
-//           console.log(arr);
-//           console.log('---------------------------------');
-//         })
-//         .then(() => {
-//           // console.log(arr);
-//         })
-//         .catch((error) => {
-//           // console.error(error);
-//         });
-//     }
-//   })
-  
-//   .catch((error) => {
-//     console.error(error);
-//   });
 
 getCategories()
   .then(response=> response.json())
